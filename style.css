@@ -1,0 +1,201 @@
+:root {
+    /* Renamed from --primary-blue-fix to just --blue */
+    --blue: #5c8efb;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 40px;
+    color: #333;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    /* Updated to an Ash / Greyish-White background to match your icon */
+    background-color: #f0f1f4; 
+}
+
+/* --- Header Section --- */
+.header-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+    background-color: #ffffff; /* White card effect */
+    border-radius: 8px 8px 0 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    flex-shrink: 0;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #1a202c;
+}
+
+.job-title {
+    margin: 5px 0 15px 0;
+    color: #718096;
+    font-size: 18px;
+}
+
+.contact-info {
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+    color: #4a5568;
+    margin-bottom: 20px;
+}
+
+.contact-info i {
+    color: #718096;
+    margin-right: 5px;
+}
+
+/* --- Buttons --- */
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    background: #edf2f7;
+    color: #2d3748;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.2s;
+}
+
+.btn-linkedin {
+    background: #ebf8ff;
+    color: var(--blue);
+}
+
+/* --- Section Styling --- */
+section { 
+    background-color: #ffffff; /* White card effect */
+    padding: 30px;
+    margin-top: 0; /* Connected to header or previous section */
+    border-bottom: 1px solid #f0f1f4;
+}
+
+/* Last section gets rounded bottom corners */
+section:last-of-type {
+    border-radius: 0 0 8px 8px;
+}
+
+.section-title {
+    font-size: 20px;
+    color: #1a202c;
+    border-bottom: 2px solid var(--blue);
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+/* --- Experience & Items --- */
+.item {
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-main {
+    flex-grow: 1;
+    padding-right: 20px;
+}
+
+/* Targets the company names previously using the old variable name */
+.item-main h3 + div {
+    color: var(--blue) !important;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.item-meta-column {
+    text-align: right;
+    flex-shrink: 0;
+    font-size: 14px;
+    color: #718096;
+    padding-top: 2px;
+}
+
+.date-location-group span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.item-main h3 { 
+    margin: 0; 
+    font-size: 18px; 
+    color: #2d3748; 
+}
+
+.objectives p {
+    margin: 0;
+    padding-bottom: 8px;
+    line-height: 1.6;
+    color: #4a5568;
+}
+
+/* --- Skills & Tags --- */
+.sub-header {
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+.tag-container { 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 10px; 
+    margin-top: 10px; 
+}
+
+.tag {
+    background-color: #ebf8ff;
+    color: var(--blue);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/* --- Projects --- */
+.project-header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-icon {
+    color: var(--blue);
+    font-size: 16px;
+}
+
+footer {
+    margin-top: 40px; 
+    padding: 20px; 
+    text-align: center; 
+    color: #718096; 
+    font-size: 13px;
+}
