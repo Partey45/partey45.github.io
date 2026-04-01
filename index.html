@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Richard Partey Madjitey</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <style>
+                :root {
+            --primary-blue-fix: #5c8efb;
+        }
+
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 40px;
+            color: #333;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #fff;
+        }
+
+       
+        .header-container {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            padding-bottom: 20px;
+        }
+
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 1px solid #ddd;
+            flex-shrink: 0;
+        }
+
+        .profile-pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 28px;
+            color: #1a202c;
+        }
+
+        .job-title {
+            margin: 5px 0 15px 0;
+            color: #718096;
+            font-size: 18px;
+        }
+
+        .contact-info {
+            display: flex;
+            gap: 20px;
+            font-size: 14px;
+            color: #4a5568;
+            margin-bottom: 20px;
+        }
+
+        .contact-info i {
+            color: #718096;
+            margin-right: 5px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .btn {
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 14px;
+            background: #edf2f7;
+            color: #2d3748;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: 0.2s;
+        }
+
+        .btn-linkedin {
+            background: #ebf8ff;
+           
+            color: var(--primary-blue-fix);
+        }
+
+        /* --- Section Styling --- */
+        section { margin-top: 40px; }
+
+        .section-title {
+            font-size: 20px;
+            color: #1a202c;
+            border-bottom: 2px solid var(--primary-blue-fix);
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+        }
+
+        .content-p {
+            line-height: 1.6;
+            color: #4a5568;
+            /* Remove margins from Ps inside content-items for list appearance */
+            margin: 0; 
+            padding-top: 5px;
+        }
+
+        /* --- Experience Item Layout (Requests 2 & 3) --- */
+        .item {
+            margin-bottom: 25px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .item-main {
+            flex-grow: 1;
+            padding-right: 20px;
+        }
+
+        .item-meta-column {
+            text-align: right;
+            flex-shrink: 0;
+            font-size: 14px;
+            color: #718096;
+            padding-top: 2px;
+        }
+
+        .date-location-group span {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .date-location-group i {
+            margin-right: 5px;
+            color: #718096;
+        }
+
+        .item-main h3 { margin: 0; font-size: 18px; color: #2d3748; }
+
+        /* Experience objectives (Request 4) - styled as list paragraphs, no bullets */
+        .objectives {
+            margin-top: 10px;
+        }
+        .objectives p {
+            margin: 0;
+            padding-bottom: 8px;
+            line-height: 1.6;
+            color: #4a5568;
+        }
+
+        /* --- Updated Skill Category Titles (Request 6) --- */
+        .sub-header {
+            /* Text color now explicitly black */
+            color: #000;
+            font-weight: 600;
+            margin-bottom: 8px;
+            font-size: 15px;
+        }
+
+        /* --- Skills Tags --- */
+        .tag-container { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+        .tag {
+            background-color: #ebf8ff;
+            /* Update to specific blue #5c8efb (Request 1) */
+            color: var(--primary-blue-fix);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        /* --- Projects Section (Request 7) --- */
+        .project-item {
+            margin-top: 20px;
+        }
+
+        /* Corrected Project Header Style with specific blue icon */
+        .project-header-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .project-header-row h3 {
+            margin: 0;
+            font-size: 18px;
+            color: #2d3748;
+        }
+        /* Icon uses specific blue #5c8efb */
+        .project-icon {
+            color: var(--primary-blue-fix);
+            font-size: 16px;
+        }
+
+        footer {
+            margin-top: 60px; padding-top: 20px; border-top: 1px solid #e2e8f0;
+            text-align: center; color: #a0aec0; font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-container">
+        <div class="profile-pic">
+            <img src="richards.jpg" alt="Richard Partey Madjitey">
+        </div>
+        <div class="details">
+            <h1>Richard Partey Madjitey</h1>
+            <p class="job-title">Data Annotator @AdwumaTech AI | Data Analyst</p>
+            <div class="contact-info">
+                <span><i class="fa-solid fa-location-dot"></i> Accra, Ghana</span>
+                <span><i class="fa-solid fa-envelope"></i> madjiteyr31@email.com</span>
+                <span><i class="fa-solid fa-phone"></i> +233 24 244 8590</span>
+            </div>
+            <div class="buttons">
+                <a href="#" class="btn"><i class="fa-solid fa-globe"></i> Website</a>
+                <a href="https://gh.linkedin.com/in/richard-madjitey-a70a92246" class="btn btn-linkedin" target="_blank"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
+                <a href="https://github.com/Partey45/" class="btn" target="_blank"><i class="fa-brands fa-github"></i> Github</a>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <h2 class="section-title">About</h2>
+        <p style="line-height: 1.6; color: #4a5568;">
+            As an AI Data Annotator at AdwumaTech AI, I focus on multi-modal annotation, data validation, and error correction 
+            to support the development of scalable AI solutions for African industrial automation. By collaborating with 
+            engineers and maintaining high annotation standards, I contribute to ensuring inclusivity and ethical 
+            practices in emerging markets.
+        </p>
+    </section>
+
+    <section>
+        <h2 class="section-title">Professional Experience</h2>
+        
+        <div class="item">
+            <div class="item-main">
+                <h3>Data Annotator</h3>
+                <div style="color: #5c8efb; font-weight: 500; margin-bottom: 10px;">AdwumaTech AI</div>
+                
+                <div class="objectives content-p">
+                    <p>As an AI Data Annotator at AdwumaTech AI, I meticulously annotate images, text, audio, and video data to train models for industrial automation and process optimization.</p>
+                    <p>I ensure annotations reflect African industrial contexts, such as equipment monitoring and regional operational standards, while identifying biases in data representation.</p>
+                    <p>I validate data quality and collaborate with engineers to refine guidelines. My work powers efficient, scalable AI solutions for industries across the continent.</p>
+                    <p>This remote role demands precision, adaptability, and a commitment to ethical AI in emerging markets.</p>
+                </div>
+            </div>
+            <div class="item-meta-column date-location-group">
+                <span><i class="fa-regular fa-calendar"></i> Oct 2025 - Present</span>
+                <span><i class="fa-solid fa-location-dot"></i> Accra, Ghana</span>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="item-main">
+                <h3>Data Entry Specialist</h3>
+                <div style="color: #5c8efb; font-weight: 500; margin-bottom: 10px;">DocuPro Limited</div>
+                
+                <div class="objectives content-p">
+                    <p>A Data Entry Specialist with proven expertise in transforming scanned documents into accurate digital records.</p>
+                    <p>Specialized in meticulously reviewing physical and PDF-based scans, then inputting data into advanced OCR software to ensure error-free extraction and storage within the company’s secure database system.</p>
+                    <p>Adhered to strict data integrity protocols and maintained high accuracy rates by cross-verifying entries and resolving discrepancies.</p>
+                    <p>Processed high volumes of sensitive information daily (invoices, forms, records) while meeting tight deadlines.</p>
+                    <p>Proficient in OCR tools, database management, and quality assurance workflows. Excelled in systematic validation processes.</p>
+                </div>
+            </div>
+            <div class="item-meta-column date-location-group">
+                <span><i class="fa-regular fa-calendar"></i> Oct 2024 - Oct 2025</span>
+                <span><i class="fa-solid fa-location-dot"></i> Accra, Ghana </span>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="item-main">
+                <h3>Junior IT Consultant</h3>
+                <div style="color: #5c8efb; font-weight: 500; margin-bottom: 10px;">University of Ghana</div>
+                
+                <div class="objectives content-p">
+                    <p>• Provided expert guidance on integrating information technology into business processes to enhance operational efficiency.</p>
+                    <p>• Collaborated with clients to demonstrate effective IT usage, aligning technology with their strategic objectives.</p>
+                    <p>• Assisted in identifying IT solutions that support business goals, ensuring clients maximize their technology investments.</p>
+                </div>
+            </div>
+            <div class="item-meta-column date-location-group">
+                <span><i class="fa-regular fa-calendar"></i> Nov 2022 - Nov 2023</span>
+                <span><i class="fa-solid fa-location-dot"></i> Legon, Ghana - On-site</span>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="section-title">Skills</h2>
+        <div class="item" style="display: block; margin-bottom: 20px;">
+            <div class="sub-header">Data Analysis</div>
+            <div class="tag-container">
+                <span class="tag">Python</span> <span class="tag">SQL</span> <span class="tag">Data Analysis</span> <span class="tag">Annotation</span> <span class="tag">Prompt Engineering</span>
+            </div>
+        </div>
+        <div class="item" style="display: block;">
+            <div class="sub-header">Web Development</div>
+            <div class="tag-container">
+                <span class="tag">HTML5</span> <span class="tag">CSS3</span> <span class="tag">JavaScript</span> <span class="tag">Django</span>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="project-item">
+            <div class="project-header-row">
+                <h3>Clippy Clipboard (A multi variation clipboard)</h3>
+                <a href="#" class="project-icon"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+            
+            <p style="color: #4a5568; margin-top: 10px; line-height: 1.6;">
+                A multi-variation clipboard tool that enables users to store and manage variations of data on the same row efficiently.
+            </p>
+            
+            <div class="tag-container" style="margin-top: 15px;">
+                <span class="tag">Python</span> <span class="tag">JavaScript</span> <span class="tag">CSS</span>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="section-title">Education</h2>
+        <div class="item">
+            <div class="item-main">
+                <h3>Bachelor of Science in Information Technology</h3>
+                <div style="color: #5c8efb; font-weight: 500;">University of Ghana</div>
+                <p style="color: #4a5568; margin-top: 8px;">Grade: Second Class Upper • Focused on practical IT problem-solving.</p>
+            </div>
+            <div class="item-meta-column date-location-group">
+                <span><i class="fa-regular fa-calendar"></i> 2018 - 2022</span>
+            </div>
+        </div>
+    </section>
+
+   <section>
+        <h2 class="section-title">Certifications</h2>
+        
+        <div class="item">
+            <div class="item-main">
+                <h3>Google Cloud Data Analytics Specialization</h3>
+                <div style="color: #5c8efb; font-weight: 500;">Google Cloud</div>
+                <p style="color: #4a5568; margin-top: 8px;">Credential ID: 6DC9ZQ6XZU7N</p>
+                <div class="tag-container">
+                    <span class="tag">Data Visualization</span>
+                </div>
+            </div>
+            <div class="item-meta-column date-location-group">
+                <span><i class="fa-regular fa-calendar"></i> Issued Dec 2025</span>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="item-main">
+                <h3>Prompt Engineering Specialization</h3>
+                <div style="color: #5c8efb; font-weight: 500;">Vanderbilt University</div>
+                <p style="color: #4a5568; margin-top: 8px;">Credential ID: 4RGQJ5PUIECF</p>
+                <div class="tag-container">
+                    <span class="tag">Prompt Engineering</span>
+                </div>
+            </div>
+            <div class="item-meta-column date-location-group">
+                <span><i class="fa-regular fa-calendar"></i> Issued Dec 2025</span>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="item-main">
+                <h3>Python for Everybody Specialization</h3>
+                <div style="color: #5c8efb; font-weight: 500;">University of Michigan (Coursera)</div>
+            </div>
+            <div class="item-meta-column date-location-group">
+                <span><i class="fa-regular fa-calendar"></i> Issued Jan 2026</span>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Richard Partey Madjitey. All rights reserved.</p>
+        <p>Built with HTML & CSS | Data Annotator @AdwumaTech AI</p>
+    </footer>
+
+</body>
+</html>
